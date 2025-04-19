@@ -1,40 +1,117 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的第一个网页</title>
+    <meta charset="utf-8">
+    <title>forest008/首页</title>
     <style>
+        /* 基础页面样式 */
         body {
-            font-family: 'Microsoft YaHei', sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
+            background-image: url('image/bg.jpg');
+            margin: 0; /* 移除默认边距 */
+            padding: 20px; /* 添加页面内边距 */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 现代字体栈 */
         }
+
+        /* 内容区块样式 */
+        .content-block {
+            background-color: wheat; /* 内容区米色背景 */
+            padding: 20px; /* 内边距 */
+            margin: 0 auto; /* 水平居中 */
+            max-width: 800px; /* 最大宽度限制 */
+            border-radius: 8px; /* 圆角效果 */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* 微妙阴影 */
+        }
+
+        /* 标题样式 */
         h1 {
-            color: #4285f4;
-            border-bottom: 2px solid #eee;
+            background-color: darkgrey; /* 深灰背景 */
+            font-size: 50px; 
+            color: aliceblue; /* 浅文字色 */
+            height: 100px; 
+            text-align: center; 
+            line-height: 100px; /* 垂直居中 */
+            margin: 0 0 20px 0; /* 下边距 */
+            border-radius: 4px; /* 圆角 */
+            font-weight: 300; /* 细体字 */
+            letter-spacing: 1px; /* 字距调整 */
         }
-        .button {
-            background: #4285f4;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
+
+        /* 分隔线样式 */
+        hr {
+            border: none; /* 移除默认样式 */
+            height: 1px; /* 细线 */
+            background: linear-gradient(90deg, transparent, rgba(0,0,0,0.2), transparent); /* 渐变效果 */
+            margin: 25px 0; /* 上下边距 */
+        }
+
+        /* 导航容器样式 */
+        .nav-container {
+            display: flex; /* 弹性布局 */
+            justify-content: center; /* 水平居中 */
+            gap: 20px; /* 按钮间距 */
+            margin: 40px 0 20px 0; /* 上下边距 */
+            flex-wrap: wrap; /* 小屏幕自动换行 */
+        }
+
+        /* 导航按钮基础样式 */
+        .nav-button {
+            position: relative; /* 相对定位(用于伪元素) */
+            padding: 12px 25px; /* 内边距 */
+            background: rgba(255,255,255,0.3); /* 半透明白色背景 */
+            color: #333; /* 深灰文字 */
+            text-decoration: none; /* 移除下划线 */
+            font-size: 16px; 
+            border-radius: 30px; /* 胶囊形状 */
+            transition: all 0.3s ease; /* 平滑过渡 */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 轻微阴影 */
+            border: 1px solid rgba(0,0,0,0.1); /* 细边框 */
+        }
+
+        /* 导航按钮悬停效果 */
+        .nav-button:hover {
+            background: rgba(255,255,255,0.5); /* 背景变亮 */
+            transform: translateY(-2px); /* 上浮效果 */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* 阴影增强 */
+        }
+
+        /* 正文段落样式 */
+        p {
+            line-height: 1.6; /* 行高增加可读性 */
+            margin: 15px 0; /* 段落间距 */
         }
     </style>
 </head>
 <body>
-    <h1>欢迎来到我的网站</h1>
-    <p>这是一个基础HTML模板，你可以自由修改内容。</p>
-    <button class="button" onclick="alert('你好！')">点击测试</button>
+    <div class="content-block">
+        <!-- 网站标题 -->
+        <h1>forest"森林"008</h1>
+        
+        <!-- 欢迎语 -->
+        <p style="font-size: larger; text-align: center;">
+            在这个网页上，可以放上大伙自己撰写的文章文字，给其他人分享。
+        </p>
+        <p style="font-size: larger; text-align: center;">
+            多多投递吧！(｡･∀･)ﾉﾞ
+        </p>
+        
+        <hr>
 
-    <script>
-        // JavaScript代码可以放在这里
-        console.log("页面加载完成");
-    </script>
+        <!-- 日记内容 -->
+        <p style="font-size: larger; font-weight: 800;">2024.6.28</p>
+        <p style="font-size: large;">
+            &nbsp;&nbsp;&nbsp;&nbsp;各位好，中考完了，现在我想做点新栏目，比如把这个二维码发朋友圈里，就可以通过这个做些事情了，甚至这是我的口舌，想的宽阔一些，这也可以是我的《湘潭评论》<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;现在还是降级叙事吧，我想先做一个有关于推理小说的栏目，过段时间就会上了吧，一位名为"图书馆暴龙"的推理小说爱好者化名"原薪"主管我们的推理小说板块，但叫什么有些犯难，暂时先叫推理小说板块吧。现在首个上去的文章还没到我手里，不过我很期待他的表现。<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;说到另一个事情，首先用的是github的服务器，卡啊什么的还算正常，因为在大洋彼岸嘛。且我发现做有评论等舆论方式的网站似乎要去备案，这不就是自投罗网吗？所以也就不要有畅想说做个自己的网站，算了吧。
+        </p>
+        
+        <hr>
+
+        <!-- 导航菜单 -->
+        <div class="nav-container">
+            <a href="index.html" class="nav-button"> 首页 </a>
+            <a href="send.html" class="nav-button"> 投稿指南 </a>
+            <a href="diary.html" class="nav-button"> 学习日志 </a>
+        </div>
+    </div>
 </body>
 </html>
