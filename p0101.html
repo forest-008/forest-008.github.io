@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>forest008/p0101</title>
+    <style>
+        /* 基础页面样式 */
+        body {
+            background-image: url('image/bg.jpg');
+            margin: 0; /* 移除默认边距 */
+            padding: 20px; /* 添加页面内边距 */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 现代字体栈 */
+        }
+
+        /* 内容区块样式 */
+        .content-block {
+            background-color: wheat; /* 内容区米色背景 */
+            padding: 20px; /* 内边距 */
+            margin: 0 auto; /* 水平居中 */
+            max-width: 1000px; /* 最大宽度限制 */
+            border-radius: 8px; /* 圆角效果 */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* 微妙阴影 */
+        }
+
+        /* 标题样式 */
+        h1 {
+            background-color: darkgrey; /* 深灰背景 */
+            font-size: 50px; 
+            color: aliceblue; /* 浅文字色 */
+            height: 100px; 
+            text-align: center; 
+            line-height: 100px; /* 垂直居中 */
+            margin: 0 0 20px 0; /* 下边距 */
+            border-radius: 4px; /* 圆角 */
+            font-weight: 300; /* 细体字 */
+            letter-spacing: 1px; /* 字距调整 */
+        }
+
+        /* 分隔线样式 */
+        hr {
+            border: none; /* 移除默认样式 */
+            height: 1px; /* 细线 */
+            background: linear-gradient(90deg, transparent, rgba(0,0,0,0.2), transparent); /* 渐变效果 */
+            margin: 25px 0; /* 上下边距 */
+        }
+        .conb{
+            background-color: rgb(245, 233, 211); /* 内容区米色背景 */
+            padding: 20px; /* 内边距 */
+            margin: 0 auto; /* 水平居中 */
+            max-width: 800px; /* 最大宽度限制 */
+            border-radius: 8px; /* 圆角效果 */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* 微妙阴影 */
+        }
+        /* 导航容器样式 */
+        .nav-container {
+            display: flex; /* 弹性布局 */
+            justify-content: center; /* 水平居中 */
+            gap: 20px; /* 按钮间距 */
+            margin: 40px 0 20px 0; /* 上下边距 */
+            flex-wrap: wrap; /* 小屏幕自动换行 */
+        }
+
+        h2 {
+            font-size: 40px;
+            color: rgb(103, 182, 252);
+            height: 60px;
+            line-height: 100px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            height: 60px;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+        }
+        /* 导航按钮基础样式 */
+        .nav-button {
+            position: relative; /* 相对定位(用于伪元素) */
+            padding: 12px 25px; /* 内边距 */
+            background: rgba(255,255,255,0.3); /* 半透明白色背景 */
+            color: #333; /* 深灰文字 */
+            text-decoration: none; /* 移除下划线 */
+            font-size: 16px; 
+            border-radius: 30px; /* 胶囊形状 */
+            transition: all 0.3s ease; /* 平滑过渡 */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 轻微阴影 */
+            border: 1px solid rgba(0,0,0,0.1); /* 细边框 */
+        }
+
+        /* 导航按钮悬停效果 */
+        .nav-button:hover {
+            background: rgba(255,255,255,0.5); /* 背景变亮 */
+            transform: translateY(-2px); /* 上浮效果 */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* 阴影增强 */
+        }
+
+        /* 正文段落样式 */
+        p {
+            line-height: 1.6; /* 行高增加可读性 */
+            margin: 15px 0; /* 段落间距 */
+        }
+    </style>
+</head>
+<body>
+    <div class="content-block">
+        <!-- 网站标题 -->
+        <h1>forest"森林"008</h1>
+        
+        <!-- 欢迎语 -->
+        <p style="font-size: larger; text-align: center;">
+            在这个网页上，可以放上大伙自己撰写的文章文字，给其他人分享。
+        </p>
+        <p style="font-size: larger; text-align: center;">
+            请多多投递吧！(｡･∀･)ﾉﾞ
+        </p>
+        
+        <hr>
+
+        <div class="conb">
+            <h3>
+                纸笔之外 / by nowman
+            </h3>
+            <p >
+                &nbsp;&nbsp;&nbsp;&nbsp;Qeglmri Pszi M kviix asyv hea
+            </p>
+        </div>
+
+        <!-- 导航菜单 -->
+        <div class="nav-container">
+            <a href="index.html" class="nav-button"> 首页 </a>
+            <a href="send.html" class="nav-button"> 投稿指南 </a>
+            <a href="diary.html" class="nav-button"> 学习日志 </a>
+        </div>
+    </div>
+</body>
+</html>
