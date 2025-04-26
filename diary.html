@@ -62,7 +62,7 @@
 
         /* === 内容区块 === */
         .content-section {
-            display: none; /* 默认全部隐藏 */
+            /* display: none;  */
             padding: 15px;
             background-color: rgba(255,255,255,0.3);
             border-radius: 6px;
@@ -125,6 +125,14 @@
                 <br>
                 &nbsp;&nbsp;&nbsp;&nbsp;那总而言之，言而总之，这个网站再开，非常好。
             </p>
+            <h2>2025年4月26日</h2>
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;今天时间多一点，我昨晚两个mp3都失败了，可恶！
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;没关系，现在我就要考虑先把手持运行器加一个放音频的功能了，但是只用加一个耳机孔就可以了。
+                再说，接下来应该就是写我的随笔了。比如纸笔之外，我闲着没事干的碎碎念应该会在那里。关于动画的随笔我非常想写，
+                因为我的悲惨生活中好像也没有其他令人兴奋的环节了。现在我也要考虑，写这个了，还有这个超链接好丑，蓝线卡在我的字那里。下回再改吧。
+            </p>
         </div>
 
         <div id="202406" class="content-section">
@@ -150,9 +158,9 @@
             const selector = document.getElementById('contentSelector');
             const sections = document.querySelectorAll('.content-section');
             
-            // 初始状态：隐藏所有内容
+             // 初始状态：隐藏所有内容
             sections.forEach(section => {
-                section.style.display = 'none';
+                section.style.display = '';
             });
             
             // 当下拉选择变化时
@@ -162,6 +170,7 @@
                     section.style.display = 'none';
                 });
                 
+
                 // 如果有选择值，则显示对应的内容区块
                 if (this.value) {
                     const selectedSection = document.getElementById(this.value);
