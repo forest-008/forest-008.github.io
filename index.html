@@ -94,6 +94,71 @@
             line-height: 1.6; /* 行高增加可读性 */
             margin: 15px 0; /* 段落间距 */
         }
+        .bookshelf {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .book {
+            width: calc(50% - 10px); /* 两栏布局，考虑间距 */
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            transition: all 0.3s ease;
+        }
+
+        .book:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .book-cover {
+            width: 100px;
+            height: 140px;
+            background-color: #f0e6d2;
+            border: 1px solid #d4c9b1;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            color: #555;
+            margin-right: 15px;
+            overflow: hidden;
+        }
+
+        .book-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .book-info {
+            flex: 1;
+        }
+
+        .book-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .book-author {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .book-desc {
+            font-size: 13px;
+            line-height: 1.4;
+            color: #555;
+        }
     </style>
 </head>
 <body>
@@ -114,18 +179,34 @@
         <!-- 日记内容 -->
         <p style="font-size: larger; font-weight: 800;">2025.4.20</p>
         <p style="font-size: large;">
-            &nbsp;&nbsp;&nbsp;&nbsp;各位好，事情很多啊，明明期中考了，但是我就是很不爽，也不想复习干嘛的。
-                总之，我很不喜欢考试，这是一场试炼，要是考好了我就大赚。但是考烂了，就已经亏炸了。无论怎么说，
-                现在写这个代码的不是我，没有关系。是Deepseek，主要是我直接学还是太慢了，对不起哦。况且引入AI我愿称其百利而有一害
-                那害就是我不会了，在AI帮助下，直接完成了选项之类的处理，平常我可能要好一段时间的。
+            &nbsp;&nbsp;&nbsp;&nbsp;各位好，现在已经要高二了，感觉确实很痛苦，但是我还沉浸在我的放松中
+                不太好但是真的很舒服。接下来去买书的过程中再思考思考吧，我的确感觉有一个我的时间表要舒服一点
+                和太宗那个不一样的。比如早上4：00出去骑车，骑到6：00回来吃早餐。然后洗个澡，7：00去图书馆
+                到10：00归来。玩到吃饭，再到下午，睡一个下午。吃完饭17：30左右，出门图书馆。周1234待到23：30去整点
+                吃的。如果是周567的话那20：00归来，爽打舟。然后就是休息了，总之8月之前先这样子吧。
                 <br>
-                &nbsp;&nbsp;&nbsp;&nbsp;那总而言之，言而总之，这个网站再开，非常好。
-        </p>
+                &nbsp;&nbsp;&nbsp;&nbsp;还有写小说的事情，感觉写的时候会很痛苦，所以我不怎么敢动笔。
+            </p>
         <hr>
         <div class="conb">
             <a href="p0101.html">
                 <h2>
                     纸笔之外
+                </h2>
+            </a>
+                <p >
+
+            </p>
+        </div>
+        <div class="conb">
+            <a href="radio/r0101.html">
+                <h2>
+                    ……研讨会
+                </h2>
+            </a>
+            <a href="radio/r0101.html">
+                <h2 style="font-size:medium">
+                    第一开
                 </h2>
             </a>
                 <p >
