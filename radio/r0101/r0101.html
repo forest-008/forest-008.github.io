@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>forest008/r0101</title>
+    <style>
+        /* 基础页面样式 */
+        body {
+            background-image: url('image/bg.jpg');
+            margin: 0; /* 移除默认边距 */
+            padding: 20px; /* 添加页面内边距 */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 现代字体栈 */
+        }
+
+        /* 内容区块样式 */
+        .content-block {
+            background-color: wheat; /* 内容区米色背景 */
+            padding: 20px; /* 内边距 */
+            margin: 0 auto; /* 水平居中 */
+            max-width: 1000px; /* 最大宽度限制 */
+            border-radius: 8px; /* 圆角效果 */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* 微妙阴影 */
+        }
+
+        /* 标题样式 */
+        h1 {
+            background-color: darkgrey; /* 深灰背景 */
+            font-size: 50px; 
+            color: aliceblue; /* 浅文字色 */
+            height: 100px; 
+            text-align: center; 
+            line-height: 100px; /* 垂直居中 */
+            margin: 0 0 20px 0; /* 下边距 */
+            border-radius: 4px; /* 圆角 */
+            font-weight: 300; /* 细体字 */
+            letter-spacing: 1px; /* 字距调整 */
+        }
+
+        /* 分隔线样式 */
+        hr {
+            border: none; /* 移除默认样式 */
+            height: 1px; /* 细线 */
+            background: linear-gradient(90deg, transparent, rgba(0,0,0,0.2), transparent); /* 渐变效果 */
+            margin: 25px 0; /* 上下边距 */
+        }
+        .conb{
+            background-color: rgb(245, 233, 211); /* 内容区米色背景 */
+            padding: 20px; /* 内边距 */
+            margin: 0 auto; /* 水平居中 */
+            max-width: 800px; /* 最大宽度限制 */
+            border-radius: 8px; /* 圆角效果 */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* 微妙阴影 */
+        }
+        /* 导航容器样式 */
+        .nav-container {
+            display: flex; /* 弹性布局 */
+            justify-content: center; /* 水平居中 */
+            gap: 20px; /* 按钮间距 */
+            margin: 40px 0 20px 0; /* 上下边距 */
+            flex-wrap: wrap; /* 小屏幕自动换行 */
+        }
+
+        h2 {
+            font-size: 40px;
+            color: rgb(103, 182, 252);
+            height: 60px;
+            line-height: 100px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            height: 60px;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+        }
+        /* 导航按钮基础样式 */
+        .nav-button {
+            position: relative; /* 相对定位(用于伪元素) */
+            padding: 12px 25px; /* 内边距 */
+            background: rgba(255,255,255,0.3); /* 半透明白色背景 */
+            color: #333; /* 深灰文字 */
+            text-decoration: none; /* 移除下划线 */
+            font-size: 16px; 
+            border-radius: 30px; /* 胶囊形状 */
+            transition: all 0.3s ease; /* 平滑过渡 */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 轻微阴影 */
+            border: 1px solid rgba(0,0,0,0.1); /* 细边框 */
+        }
+
+        /* 导航按钮悬停效果 */
+        .nav-button:hover {
+            background: rgba(255,255,255,0.5); /* 背景变亮 */
+            transform: translateY(-2px); /* 上浮效果 */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* 阴影增强 */
+        }
+
+        /* 正文段落样式 */
+        p {
+            line-height: 1.6; /* 行高增加可读性 */
+            margin: 15px 0; /* 段落间距 */
+        }
+        
+        /* 新增样式：音频播放器容器 */
+        .audio-container {
+            background-color: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px auto;
+            text-align: center;
+            max-width: 500px;
+        }
+        
+        /* 新增样式：多媒体内容区域 */
+        .media-section {
+            background-color: rgb(245, 233, 211);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 8px;
+            max-width: 800px;
+        }
+        
+        /* 新增样式：图片容器 */
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        /* 新增样式：图片占位框 */
+        .image-placeholder {
+            width: 400px;
+            height: 600px;
+            background-color: #e0e0e0;
+            border: 2px dashed #aaa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #777;
+            font-style: italic;
+        }
+        
+        /* 新增样式：文本内容区域 */
+        .text-content {
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 15px;
+            border-radius: 6px;
+            margin: 15px 0;
+            min-height: 100px;
+            border: 1px dashed #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="content-block">
+        <!-- 网站标题 -->
+        <h1>forest"森林"008</h1>
+        
+        <!-- 欢迎语 -->
+        <p style="font-size: larger; text-align: center;">
+            在这个网页上，可以放上大伙自己撰写的文章文字，给其他人分享。
+        </p>
+        <p style="font-size: larger; text-align: center;">
+            请多多投递吧！(｡･∀･)ﾉﾞ
+        </p>
+        
+        <hr>
+
+        <!-- 音频播放器区域 -->
+        <div class="audio-container">
+            <h3>第一开</h3>
+            <!-- 音频播放器 - 替换YOUR_AUDIO_FILE.mp3为实际文件路径 -->
+            <audio controls style="width: 100%;">
+                <source src='r0101.mp3' type="audio/mpeg">
+            </audio>
+            <p style="font-style: italic; margin-top: 10px;">
+                对于京都动画，我本人是带有些情感的，京蜜称不上，但是二十世纪电器目录是必须看的！
+            </p>
+        </div>
+
+        <hr>
+
+        <!-- 多媒体内容区域 -->
+        <div class="media-section">
+            <h3 style="text-align: center;">记录</h3>
+            
+            <!-- 图片展示区 -->
+            <div class="image-gallery">
+                <!-- 图片占位框1 -->
+                <div class="image-placeholder">
+                    <img src="01.webp" alt="日常" class="image-placeholder">
+                </div>
+
+            </div>
+            
+            <!-- 文本内容区域 -->
+            <div class="text-content">
+                <!-- 这里可以添加与图片相关的描述文字 -->
+                关于董卓，想必各位都知道了，我有幸还没观赏过。我认为我这辈子也没有什么必要去
+                品鉴了。言归正传，日常这部我当时看得很快乐，主要是真想不到哇。
+                给我比较大观感甜品的反而不是那种人们紧紧相连的感觉，而是枪火女王和学长。这里的枪火
+                感觉很厉害，和之后的一部作品有关。之前我重温一集的时候对鱿鱼丝是真绷不住了。
+            </div>
+
+            <div class="image-gallery">
+                <div class="image-placeholder">
+                    <img src="02.webp" alt="玉子市场" class="image-placeholder">
+                </div>
+
+            </div>
+            <div class="text-content">
+                玉子市场每集的内容我都很喜欢但是我不太能记起来，我光记得最后饼哥险些被NTR了。玉子
+                爱情故事可能才是最好的三角释怀样本，GQUX还是太……
+            </div>
+            <div class="image-gallery">
+                <div class="image-placeholder">
+                    <img src="03.webp" alt="凉宫春日" class="image-placeholder">
+                </div>
+            </div>
+            <div class="text-content">
+                我相当喜欢，就是那种令人感到不出后头的东西实在是太可惜的感觉。还有就是
+                日本和中国两步的经济走向，冰菓也好，凉宫也好。这种灰色的大众心理，凉宫靠着
+                向这样灰色的世界举起义旗，声称着：有趣的生活就在这里，自己去创造吧！
+            </div>
+            <div class="image-gallery">
+                <div class="image-placeholder">
+                    <img src="10.webp" alt="甘城" class="image-placeholder">
+                </div>
+            </div>
+            <div class="text-content">
+                这里的千斗五十铃裙底掏火枪就是我对枪火女王的喜爱的继承，火枪这种早些
+                事情的铳器就给我一种神秘和上乘的感受。就像是那种对骑士和中世纪的喜爱，
+                明明是一个农奴制遍地的社会，也许是其中裹挟的理想精神给人一种光鲜亮丽的感觉吧。
+            </div>
+            <div class="image-gallery">
+                <div class="image-placeholder">
+                    <img src="06.webp" alt="幸运星" class="image-placeholder">
+                </div>
+
+            </div>
+            <div class="text-content">
+                我要玩幸运星里面的网游！
+            </div>
+            <div class="image-gallery">
+                <div class="image-placeholder">
+                    <img src="11.webp" alt="冰菓" class="image-placeholder">
+                </div>
+
+            </div>
+            <div class="text-content">
+                灰色的生活来自于折木，但是在千反田的影响下，这样的生活绝对算不上平淡。
+                冰菓在我这里除了其所拥有的动画表现，更重要的是折木给大家感受到的青春感。
+                虽然这个是最近翻来覆去地说，但是，折木那里的感情不太一样。是一种平淡的
+                风群，我之前做过千反田花瓣那里的比喻。的确也是那种感觉，樱花片子哪都有，
+                但是春天再来一回的时候。花瓣子可不会和昨年一样了，但是的确已经是春天了。
+
+            </div>
+        </div>
+
+        <!-- 导航菜单 -->
+        <div class="nav-container">
+            <a href="index.html" class="nav-button"> 首页 </a>
+            <a href="send.html" class="nav-button"> 投稿指南 </a>
+            <a href="diary.html" class="nav-button"> 学习日志 </a>
+        </div>
+    </div>
+</body>
+</html>

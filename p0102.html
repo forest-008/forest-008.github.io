@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>forest008/p0101</title>
+    <style>
+        /* 基础页面样式 */
+        body {
+            background-image: url('image/bg.jpg');
+            margin: 0; /* 移除默认边距 */
+            padding: 20px; /* 添加页面内边距 */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 现代字体栈 */
+        }
+
+        /* 内容区块样式 */
+        .content-block {
+            background-color: wheat; /* 内容区米色背景 */
+            padding: 20px; /* 内边距 */
+            margin: 0 auto; /* 水平居中 */
+            max-width: 1000px; /* 最大宽度限制 */
+            border-radius: 8px; /* 圆角效果 */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* 微妙阴影 */
+        }
+
+        /* 标题样式 */
+        h1 {
+            background-color: darkgrey; /* 深灰背景 */
+            font-size: 50px; 
+            color: aliceblue; /* 浅文字色 */
+            height: 100px; 
+            text-align: center; 
+            line-height: 100px; /* 垂直居中 */
+            margin: 0 0 20px 0; /* 下边距 */
+            border-radius: 4px; /* 圆角 */
+            font-weight: 300; /* 细体字 */
+            letter-spacing: 1px; /* 字距调整 */
+        }
+
+        /* 分隔线样式 */
+        hr {
+            border: none; /* 移除默认样式 */
+            height: 1px; /* 细线 */
+            background: linear-gradient(90deg, transparent, rgba(0,0,0,0.2), transparent); /* 渐变效果 */
+            margin: 25px 0; /* 上下边距 */
+        }
+        .conb{
+            background-color: rgb(245, 233, 211); /* 内容区米色背景 */
+            padding: 20px; /* 内边距 */
+            margin: 0 auto; /* 水平居中 */
+            max-width: 800px; /* 最大宽度限制 */
+            border-radius: 8px; /* 圆角效果 */
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* 微妙阴影 */
+        }
+        /* 导航容器样式 */
+        .nav-container {
+            display: flex; /* 弹性布局 */
+            justify-content: center; /* 水平居中 */
+            gap: 20px; /* 按钮间距 */
+            margin: 40px 0 20px 0; /* 上下边距 */
+            flex-wrap: wrap; /* 小屏幕自动换行 */
+        }
+
+        h2 {
+            font-size: 40px;
+            color: rgb(103, 182, 252);
+            height: 60px;
+            line-height: 100px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+        }
+
+        h3 {
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            height: 60px;
+            text-align: center;
+            line-height: 100px;
+            border-radius: 4px;
+            letter-spacing: 1px;
+        }
+        /* 导航按钮基础样式 */
+        .nav-button {
+            position: relative; /* 相对定位(用于伪元素) */
+            padding: 12px 25px; /* 内边距 */
+            background: rgba(255,255,255,0.3); /* 半透明白色背景 */
+            color: #333; /* 深灰文字 */
+            text-decoration: none; /* 移除下划线 */
+            font-size: 16px; 
+            border-radius: 30px; /* 胶囊形状 */
+            transition: all 0.3s ease; /* 平滑过渡 */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* 轻微阴影 */
+            border: 1px solid rgba(0,0,0,0.1); /* 细边框 */
+        }
+
+        /* 导航按钮悬停效果 */
+        .nav-button:hover {
+            background: rgba(255,255,255,0.5); /* 背景变亮 */
+            transform: translateY(-2px); /* 上浮效果 */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* 阴影增强 */
+        }
+
+        /* 正文段落样式 */
+        p {
+            line-height: 1.6; /* 行高增加可读性 */
+            margin: 15px 0; /* 段落间距 */
+        }
+    </style>
+</head>
+<body>
+    <div class="content-block">
+        <!-- 网站标题 -->
+        <h1>forest"森林"008</h1>
+        
+        <!-- 欢迎语 -->
+        <p style="font-size: larger; text-align: center;">
+            在这个网页上，可以放上大伙自己撰写的文章文字，给其他人分享。
+        </p>
+        <p style="font-size: larger; text-align: center;">
+            请多多投递吧！(｡･∀･)ﾉﾞ
+        </p>
+        
+        <hr>
+
+        <div class="conb">
+            <h3>
+                纸笔之外：遐想 / by 林佳澄
+            </h3>
+            <p >
+                &nbsp;&nbsp;&nbsp;&nbsp;之前坐公交，前座的大叔左瞧右瞧
+                像刚出生似的观察我已经熟悉得不能再熟悉的街景，这让我感到疑惑
+                我从未在一位已不再年轻的人身上看到过如此之强的求知欲，贪婪地用眼睛
+                抓取着景色。自从录音笔复活，我公交上的生活就从观看窗外变成听音乐了。也许在我改变之前
+                ，旁人看来我也是充满好奇心地在探索。这兴许是我逐渐内敛的过程。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;从初中当班长时，时常要承担自己口中说出来的话的责任，
+                所以“也许”、“兴许”、大概等词语成了我常挂在嘴边的词。到高中更是这样，通常不敢承担责任，
+                而套上我也不甚确定的说法，这句话就能毫无负罪地说出去了。不过这种习惯到了高中
+                立马就被反驳了，Ha氏说：“第一次在嘴边听到‘兴许’这个词”。从天马行空地说话
+                这种小孩地特权被我抛弃了。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;以上，应该能算作人逐渐长大地痕迹。像是观测产物，
+                小孩特有的自由和无拘一步步地坍缩，直到把你塑造成他人观测中的成年人。但是选择的我不太能苟同，似乎
+                长大应该是实力的增长，而非片刻的行为和言语的变更。当一个孩子打小想着上清北
+                ，最后真上了清北，他肯定成长了，毕竟5岁小孩是不会写立体几何的。但，他按照着
+                自己的预期在成长，我小时候可能没有这种豪言壮语，毕竟是说话没把握的人。不过我
+                的确没跟着我的预期成长。也许本来的预期是二高、哈工大然后去当EDA工程师。
+                但眼下在三校我就已经伤痕累累了，还多半考不出省。现实变故多到我现在的遐想已经不敢继续
+                下去了，似乎已经有一半实现不了了。这都是遐想的坍缩，所以我会内敛，
+                因为我的实力不允许我趾高气扬的生活着，减少发声即是减少发声失败。会改口，
+                因为真实情况不尽如人意。我实在不敢再去妄想自己的未来了，鉴于在如此之多的失败中
+                得来的经验。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;当我放下遐想，真正去感受现实的时候我才知道自己
+                在社会中的重量。看到成绩之后又转而遐想天生我材必有用，这种遐想建立在空虚上。所以我不敢说自己
+                说自己能够脱离这种生活方式活下去，眼下的确是直面现实的年纪和充满遐想的我触发了矛盾。
+                我的正反馈几乎都来自于此，我需要将这样的反馈转移。去感受努力和进步而非自我安慰，
+                首先便是明确现实。在等到成绩单之后我居然是松了一口气，我居然真有了进步，就这一下
+                我又回到写文章之前的对现状毫无理解的状态了。又回到充斥着无厘头遐想的我了。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;但是实际上这样写下的文章也是遐想出来的，是我在遐想这样反思后就能奋发图强而写下的。
+                所以严格来说，纸笔之外就是自我了解。从前总想我和“我”不同，不了解
+                自己，不过是不想接受无能自己所找的借口。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;上文总结下来：遐想是我遇难后的安慰药，是我叫苦的强心剂
+                。应转向体恤自己的表现，并尽力改变。<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;这么一想我已经想到不少合适的题材了。<br>
+            </p>
+        </div>
+
+        <!-- 导航菜单 -->
+        <div class="nav-container">
+            <a href="index.html" class="nav-button"> 首页 </a>
+            <a href="send.html" class="nav-button"> 投稿指南 </a>
+            <a href="diary.html" class="nav-button"> 学习日志 </a>
+        </div>
+    </div>
+</body>
+</html>
